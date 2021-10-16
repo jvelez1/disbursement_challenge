@@ -2,3 +2,6 @@
   hello_world:
     cron: '*/5 * * * *'
     class: HelloWorldWorker
+  bulk_disbursements_processor:
+    cron: '0 0 * * MON' 
+    class: BulkDisbursementsProcessorWorker
