@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :merchant do
-    email { 'velecito@gmail.com' }
-    cif { 'B12456777' }
+    email { FFaker::Internet.unique.email }
+    cif { FFaker::Code.npi }
   end
 end
