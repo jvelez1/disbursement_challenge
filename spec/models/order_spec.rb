@@ -4,6 +4,7 @@ RSpec.describe Order, type: :model do
   describe '#associations' do
     it { is_expected.to belong_to(:merchant) }
     it { is_expected.to belong_to(:shopper) }
+    it { is_expected.to have_one(:disbursement) }
   end
 
   describe '#validations' do
