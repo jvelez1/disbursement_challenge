@@ -1,0 +1,10 @@
+redis_default: &redis_default
+  host: <%= ENV['REDIS_HOST'] %>
+  port: <%= ENV['REDIS_PORT'] %>
+  connect_timeout: <%= ENV['REDIS_CONNECT_TIMEOUT'] %>
+  read_timeout: <%= ENV['REDIS_READ_TIMEOUT'] %>
+  write_timeout: <%= ENV['REDIS_WRITE_TIMEOUT'] %>
+  db: <%= ENV['REDIS_DB'] %>
+
+<%= ENV['RAILS_ENV']%>:
+  <<: *redis_default

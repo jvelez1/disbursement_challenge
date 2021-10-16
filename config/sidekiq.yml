@@ -1,0 +1,4 @@
+:schedule:
+  hello_world:
+    cron: '*/5 * * * *'
+    class: HelloWorldWorker
